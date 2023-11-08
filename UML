@@ -1,0 +1,19 @@
+```mermaid
+graph TD
+    Start --> |(Farmer) Create Profile| Blockchain
+    Blockchain --> |Store Farmer's Profile| System
+    System --> |Assign Unique ID| Blockchain
+    Blockchain --> |Record Profile Creation| End
+
+    Start --> |(Farmer) Submit Application| Blockchain
+    Blockchain --> |Record Application Submission| System
+    System --> |Automatically Assign Field Officer| Blockchain
+    Blockchain --> |Record Verification| System
+    System --> |Schedule Regular Checkups| Field Officer
+
+    Field Officer --> |Regular Checkup| Blockchain
+    Blockchain --> |Record Checkup Details| System
+    System --> |Send Notification to Farmer| End
+
+    Blockchain --> |Issue Certificate| Farmer
+    Farmer --> |View Certificate| End
